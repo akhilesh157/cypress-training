@@ -19,8 +19,8 @@
 </head>
 <body>
     <form>
-        <label style="height: 100px; color: red;">afsername: </label> <input id="username" type="text" style="width:150px; height:30px; margin-bottom: 15px;"><br>
-        <label style="width: 10px; color: red;">Email: </label> <input id="email" type="email" style="width:150px; height:30px; margin-bottom: 15px;"><br>
+        username: </label> <input id="username" type="text" style="width:150px; height:30px; margin-bottom: 15px;"><br>
+        Email: </label> <input id="email" type="email" style="width:150px; height:30px; margin-bottom: 15px;"><br>
         DOB: <input id="dob" type="date" style="width:150px; height:30px; margin-bottom: 15px;"><br>
         <button type="button" onclick="btnclick()">Signup </button>
     </form>
