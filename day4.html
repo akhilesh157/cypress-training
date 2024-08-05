@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        username: <input id="username" type="text" style="width:150px; height:30px; margin-bottom: 15px;"><br>
+        Email:<input id="email" type="email" style="width:150px; height:30px; margin-bottom: 15px;"><br>
+        DOB: <input id="dob" type="date" style="width:150px; height:30px; margin-bottom: 15px;"><br>
+        <button type="button" onclick="btnclick()">Signup </button>
+    </form>
+    <h1 id="gg">one</h1>
+    <script>
+        function btnclick(){
+            userdetails={
+            Username: document.getElementById('username').value,
+            Email: document.getElementById('email').value,
+            DOB: document.getElementById('dob').value,
+            };
+            console.log(`username: ${userdetails.Username}`);
+            console.log(`Email: ${userdetails.Email}`);
+            console.log(`Date of Birth: ${userdetails.DOB}`);
+        }; 
+        const headings=["two","three"];
+        let i=0;
+        let count=2;
+        function dom(){
+            const element=document.getElementById("gg");
+            element.textContent = `${headings[i]}, Count: ${count}`;
+            i++;
+            count++;
+            if (i>=headings.length){
+                i=0;
+            }
+            if (count==11){
+                clearInterval(timing);
+            }
+        }
+        timing=setInterval(dom,1500);
+    </script>
+</body>
+</html>
